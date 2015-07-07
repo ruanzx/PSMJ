@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED163C71-6AEB-4EFE-BF63-A26AF0AB28D3}</ProjectGuid>
+    <RootNamespace>PWSMJ</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BitHelpers.h" />
+    <ClInclude Include="BNLJ.h" />
+    <ClInclude Include="CBnljDlg.h" />
+    <ClInclude Include="CAboutDlg.h" />
+    <ClInclude Include="CCemsDlg.h" />
+    <ClInclude Include="CGhjDlg.h" />
+    <ClInclude Include="CHhjDlg.h" />
+    <ClInclude Include="CLargeFileDlg.h" />
+    <ClInclude Include="CNsmDlg.h" />
+    <ClInclude Include="Commons.h" />
+    <ClInclude Include="CPemsDlg.h" />
+    <ClInclude Include="CPowerControlDlg.h" />
+    <ClInclude Include="CPsmjDlg.h" />
+    <ClInclude Include="CPU.h" />
+    <ClInclude Include="CpuTopology.h" />
+    <ClInclude Include="CpuUsage.h" />
+    <ClInclude Include="CpuWorkload.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="CRpDlg.h" />
+    <ClInclude Include="CSmj2Dlg.h" />
+    <ClInclude Include="CSmjDlg.h" />
+    <ClInclude Include="DialogHelpers.h" />
+    <ClInclude Include="DiskMonitor.h" />
+    <ClInclude Include="IOWorkload.h" />
+    <ClInclude Include="MemoryWorkload.h" />
+    <ClInclude Include="PEMS.h" />
+    <ClInclude Include="PSMJ.h" />
+    <ClInclude Include="PSMJRP.h" />
+    <ClInclude Include="SMJ2.h" />
+    <ClInclude Include="SRW.h" />
+    <ClInclude Include="TSMJ.h" />
+    <ClInclude Include="WMI.h" />
+    <ClInclude Include="WmiService.h" />
+    <ClInclude Include="DoubleBuffer.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="CEMS.h" />
+    <ClInclude Include="ExsMergePhase.h" />
+    <ClInclude Include="ExsPartitionPhase.h" />
+    <ClInclude Include="ReplacementSelection.h" />
+    <ClInclude Include="DataTypes.h" />
+    <ClInclude Include="GHJ.h" />
+    <ClInclude Include="HHJ.h" />
+    <ClInclude Include="Loggers.h" />
+    <ClInclude Include="LoserTree.h" />
+    <ClInclude Include="MemoryMonitor.h" />
+    <ClInclude Include="MsrDriver.h" />
+    <ClInclude Include="Mutex.h" />
+    <ClInclude Include="NSM.h" />
+    <ClInclude Include="PageHelpers.h" />
+    <ClInclude Include="PageHelpers2.h" />
+    <ClInclude Include="PowerSchemes.h" />
+    <ClInclude Include="PowerSettings.h" />
+    <ClInclude Include="CProcessorInfoDlg.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="CPWSMJDlg.h" />
+    <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SMJ.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StopWatch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WaitInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitHelpers.cpp" />
+    <ClCompile Include="BNLJ.cpp" />
+    <ClCompile Include="CBnljDlg.cpp" />
+    <ClCompile Include="CAboutDlg.cpp" />
+    <ClCompile Include="CCemsDlg.cpp" />
+    <ClCompile Include="CGhjDlg.cpp" />
+    <ClCompile Include="CHhjDlg.cpp" />
+    <ClCompile Include="CLargeFileDlg.cpp" />
+    <ClCompile Include="CNsmDlg.cpp" />
+    <ClCompile Include="Commons.cpp" />
+    <ClCompile Include="CPemsDlg.cpp" />
+    <ClCompile Include="CPowerControlDlg.cpp" />
+    <ClCompile Include="CPsmjDlg.cpp" />
+    <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="CpuTopology.cpp" />
+    <ClCompile Include="CpuUsage.cpp" />
+    <ClCompile Include="CpuWorkload.cpp" />
+    <ClCompile Include="CriticalSection.cpp" />
+    <ClCompile Include="CRpDlg.cpp" />
+    <ClCompile Include="CSmj2Dlg.cpp" />
+    <ClCompile Include="CSmjDlg.cpp" />
+    <ClCompile Include="DialogHelpers.cpp" />
+    <ClCompile Include="DiskMonitor.cpp" />
+    <ClCompile Include="DoubleBuffer.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="CEMS.cpp" />
+    <ClCompile Include="ExsMergePhase.cpp" />
+    <ClCompile Include="ExsPartitionPhase.cpp" />
+    <ClCompile Include="PSMJRP.cpp" />
+    <ClCompile Include="ReplacementSelection.cpp" />
+    <ClCompile Include="GHJ.cpp" />
+    <ClCompile Include="HHJ.cpp" />
+    <ClCompile Include="IOWorkload.cpp" />
+    <ClCompile Include="Loggers.cpp" />
+    <ClCompile Include="LoserTree.cpp" />
+    <ClCompile Include="MemoryMonitor.cpp" />
+    <ClCompile Include="MemoryWorkload.cpp" />
+    <ClCompile Include="MsrDriver.cpp" />
+    <ClCompile Include="Mutex.cpp" />
+    <ClCompile Include="NSM.cpp" />
+    <ClCompile Include="PageHelpers.cpp" />
+    <ClCompile Include="PageHelpers2.cpp" />
+    <ClCompile Include="PEMS.cpp" />
+    <ClCompile Include="PowerSchemes.cpp" />
+    <ClCompile Include="CProcessorInfoDlg.cpp" />
+    <ClCompile Include="PSMJ.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="CPWSMJDlg.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="SMJ.cpp" />
+    <ClCompile Include="SMJ2.cpp" />
+    <ClCompile Include="SRW.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StopWatch.cpp" />
+    <ClCompile Include="TSMJ.cpp" />
+    <ClCompile Include="WaitInfo.cpp" />
+    <ClCompile Include="WMI.cpp" />
+    <ClCompile Include="WmiService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PWSMJ.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PWSMJ.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PWSMJ.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PWSMJ.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
